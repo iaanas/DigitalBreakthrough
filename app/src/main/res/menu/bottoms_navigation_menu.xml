@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/action_item1"
-        android:icon="@drawable/ic_apps_black_24dp"
-        android:title="Item1"/>
+        android:icon="@drawable/ic_create_new_folder_black_24dp"
+        android:title="Заявки"/>
     <item
         android:id="@+id/action_item2"
-        android:icon="@drawable/ic_attachment_black_24dp"
-        android:title="Item2"/>
+        android:icon="@drawable/ic_folder_shared_black_24dp"
+        android:title="Контрагенты"/>
     <item
         android:id="@+id/action_item3"
-        android:icon="@drawable/ic_beach_access_black_24dp"
-        android:title="Item3"/>
+        android:icon="@drawable/ic_donut_large_black_24dp"
+        android:title="Статистика"/>
 </menu>
