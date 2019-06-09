@@ -97,18 +97,18 @@
                     android:layout_height="wrap_content" />
 
             </RadioGroup>
-            <!--<View-->
-                <!--android:id="@+id/divider5"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="1dp"-->
-                <!--android:background="?android:attr/listDivider" />-->
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
 
-            <!--<Button-->
-                <!--android:id="@+id/btn_start_location_updates"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="40dp"-->
-                <!--android:text="Start Updates" />-->
+            <Button
+                android:id="@+id/btn_start_location_updates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="МОИ GPS КООРДИНАТЫ" />
 
             <!--<Button-->
                 <!--android:id="@+id/btn_stop_location_updates"-->

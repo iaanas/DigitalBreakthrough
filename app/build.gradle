@@ -52,6 +52,9 @@ dependencies {
 
     // dexter runtime permissions
     implementation 'com.karumi:dexter:4.2.0'
+//    implementation 'com.google.android.gms:play-services-ads:17.2.1'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+//    implementation 'com.google.android.gms:play-services-ads:16.0.0'
 
     // ButterKnife view binding
 //    implementation 'com.jakewharton:butterknife:10.0.0'
