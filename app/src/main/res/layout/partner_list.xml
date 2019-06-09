@@ -13,73 +13,67 @@
     app:cardCornerRadius="@dimen/activity_vertical_margin"
     app:cardElevation="@dimen/activity_vertical_margin">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:paddingTop="25dp"
         android:paddingLeft="15dp"
         android:paddingBottom="5dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgAva"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:src="@drawable/red_oval" />
-
-        <TextView
-            android:id="@+id/inn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:layout_alignTop="@+id/imgAva"
-            android:layout_toRightOf="@+id/imgAva"
-            android:layout_marginTop="1dp"
-            android:layout_marginLeft="18dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:layout_toEndOf="@+id/imgAva" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/ogrn"
-            android:textSize="12sp"
-            android:layout_marginTop="2dp"
-            android:layout_below="@+id/inn"
-            android:layout_alignLeft="@+id/inn"
-            android:layout_alignStart="@+id/inn" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/address"
-            android:textSize="12sp"
-            android:layout_marginTop="2dp"
-            android:layout_below="@+id/ogrn"
-            android:layout_alignLeft="@+id/inn"
-            android:layout_alignStart="@+id/inn" />
-
-        <Button
-            android:id="@+id/button"
-            android:text="ПОДРОБНЕЕ"
-            android:textSize="14sp"
-            android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="@color/colorPrimary"
-            android:background="@color/colorAccent"
-            android:layout_below="@+id/address"
-            android:layout_alignLeft="@+id/ogrn"
-            android:layout_alignStart="@+id/ogrn"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content" />
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
 
-    </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/innCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ogrnCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/telCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/addressCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button"
+                android:text="ПОДРОБНЕЕ"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorAccent"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>

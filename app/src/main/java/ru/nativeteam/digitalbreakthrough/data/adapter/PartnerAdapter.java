@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import ru.nativeteam.digitalbreakthrough.R;
-import ru.nativeteam.digitalbreakthrough.data.model.Events;
 import ru.nativeteam.digitalbreakthrough.data.model.Partners;
 
 public class PartnerAdapter extends RecyclerView.Adapter<PartnerAdapter.ViewHolder> {
@@ -27,17 +26,17 @@ public class PartnerAdapter extends RecyclerView.Adapter<PartnerAdapter.ViewHold
 	@Override
 	public PartnerAdapter.ViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
 		
-		View view = inflater.inflate( R.layout.list_events, parent, false);
+		View view = inflater.inflate( R.layout.partner_list, parent, false);
 		return new PartnerAdapter.ViewHolder(view);
 	}
 	
 	@Override
 	public void onBindViewHolder(PartnerAdapter.ViewHolder holder, int position) {
 		Partners partner = partners.get(position);
-		holder.userOut.setText(partner.getUserOut());
-		holder.inn.setText(partner.getInn());
-		holder.ogrn.setText( partner.getOgrn() );
-		holder.address.setText( partner.getAddress() );
+		holder.nameCompany.setText(partner.getUserOut());
+		holder.innCompany.setText( partner.getInn());
+		holder.ogrnCompany.setText( partner.getOgrn() );
+		holder.addressCompany.setText( partner.getAddress());
 		holder.imgAva.setImageResource(R.drawable.flat_faces_icons_circle_3_768x768);
 		
 	}
@@ -48,14 +47,15 @@ public class PartnerAdapter extends RecyclerView.Adapter<PartnerAdapter.ViewHold
 	}
 	
 	public class ViewHolder extends RecyclerView.ViewHolder {
-		final TextView userOut , inn, ogrn, address;
+		final TextView nameCompany, innCompany, ogrnCompany, addressCompany, telCompany;
 		final ImageView imgAva;
 		ViewHolder(View view){
 			super(view);
-			userOut = (TextView) view.findViewById(R.id.userOut);
-			inn = ( TextView ) view.findViewById( R.id.inn);
-			ogrn = (TextView ) view.findViewById( R.id.ogrn );
-			address = (TextView) view.findViewById( R.id.address );
+			nameCompany = (TextView) view.findViewById(R.id.nameCompany);
+			innCompany = ( TextView ) view.findViewById( R.id.innCompany);
+			ogrnCompany = (TextView ) view.findViewById( R.id.ogrnCompany );
+			addressCompany = (TextView) view.findViewById( R.id.addressCompany );
+			telCompany = (TextView ) view.findViewById( R.id.telCompany );
 			imgAva = (ImageView) view.findViewById( R.id.imgAva );
 			
 		}
